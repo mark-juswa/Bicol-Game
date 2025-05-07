@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/transparent">
+
+    <!--
+     android:background="@drawable/green_gradient
+    android:background="@android:color/transparent"
+    -->
+
+    <!-- Option Buttons -->
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Question 1"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option A"
+        android:background="@drawable/rounded_button_white"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option B"
+        android:background="@drawable/rounded_button_white"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option C"
+        android:background="@drawable/rounded_button_white"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option D"
+        android:background="@drawable/rounded_button_white"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"/>
+</LinearLayout>

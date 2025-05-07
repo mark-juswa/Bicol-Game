@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="8dp"
+    card_view:cardBackgroundColor="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_background_test">
+
+
+        <!-- Badge + ProgressBar + Score Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Badge -->
+            <ImageView
+                android:id="@+id/levelBadge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/quiz" />
+
+            <!-- ProgressBar -->
+            <ProgressBar
+                android:id="@+id/testProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:max="100"
+                android:progress="50"
+                android:progressTint="@color/lava_red" />
+
+            <!-- Score Text -->
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="50%"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/testNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Bicolano Baguhan"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
